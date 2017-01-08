@@ -1,24 +1,30 @@
-# Site settings
-title: ZYQ
-email: zhouyq@wise2c.com
-description: 周叶倩的博客 前端爱好者
-# > # this means to ignore newlines until "baseurl:"
-#   Write an awesome description for your new site here. You can edit this
-#   line in _config.yml. It will appear in your document head meta (for
-#   Google search results) and in your feed.xml site description.
+safe: false
 
-# baseurl: "" # the subpath of your site, e.g. /blog/
-# url: "http://yourdomain.com" # the base hostname & protocol for your site
-# twitter_username: jekyllrb
-github_username:  zhouyeqian
-permalink: /:year/:month/:day/:title/
-
-# Build settings
+# build settings
 markdown: kramdown
+highlighter: rouge
+lsi: false
+permalink: /:title
 
-# highlight
-# 本地用rouge, github上用pygments
-# highlighter: pygments
-# highlighter: rouge
-# highlighter: false
+title: "Your Name"
+description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
+baseurl: ""
+url: "http://himsel.me" # replace by your site's url
+twitter_username: your-name
+github_username:  lukas-h # (your name)
+accent: "#f7f7e6" # accent color for blog column
 
+author: "Your Name"
+address: "Your Street, <br>Your City, Country"
+email: "your@email.com"
+
+# google analytics tracking code, please change the value
+g_analytics: ""
+
+# language settings
+isolang: en
+
+# exclude files
+exclude:
+  - LICENSE
+  - README.md
