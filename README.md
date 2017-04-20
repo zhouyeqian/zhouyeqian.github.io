@@ -1,38 +1,59 @@
-# onepage
-uncomplicated single-page jekyll blog theme
+## Voyager
 
-# [DEMO](http://himsel.me)
+Just another jekyll theme. Demo: <http://redvi.github.io/voyager>
 
-# use it! - 4 easy steps
+### Feathures:
 
-#### 1. fork this repository and rename it
+All HTML files are compressed (see `_layouts/compress.html`).
 
-#### 2. create a branch called `gh-pages`
+**Post**
 
-#### 3. edit the `_config.yml` file  
+All post settings can be changed. Example:
 
-3.1. paste your `title` and `description`  
+```
+---
+layout: post
+bg: '2016/background.jpg'
+title: "Post Heading"
+crawlertitle: "page title"
+summary: "post description"
+date: 2016-06-29
+tags : ['front-end']
+slug: post-url
+author: "Author"
+categories: posts
+---
+```
 
-3.2. give your site's url with protocol (http or https) to the variable `url`  
+`bg` is a path to background of your article. By default backgrounds are placed in the `assets/images` directory.
 
-3.3. the part after your page domain, for example you have `http://himsel.me/onepage`, `baseurl: "/onepage"` is the right value
+**Page**
 
-3.4. paste **github** and **twitter** username to the following variables. Important: **without** @ prefix  
+If page contains `active` tag, it will be show on site menu.
 
-3.5. `accent` is the color code for the blog column
+```
+---
+layout: page
+title: "About"
+permalink: /about/
+active: about
+---
+```
 
-3.6. edit address and name, email too.
+**Archive**
 
-3.7. you are using google analytics? paste your ID to `g_analytics: ""`
+Archive page is sorting posts by tags. No more than one tag in one post.
 
-3.8. edit html content language here: `isolang: en`, default is english
+Good:
 
-#### 4. start writing posts
+```
+tags : ['front-end']
+```
 
-4.1 posts are in the directory `_posts`  
+Bad:
 
-4.2 see here an introduction: http://jekyllrb.com/docs/posts/  
+```
+tags : ['front-end', 'jekyll']
+```
 
-# thank you
-share this project, give a star, contributions welcome  
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+Don't forget to change `_config.yml`.
